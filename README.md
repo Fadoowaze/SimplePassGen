@@ -1,5 +1,5 @@
 # Simple password gen
-Password generator with support for KeePass [plugin]:https://keepass.info/plugins.html#convertto2xxml to convert to XML
+Password generator with support for KeePass [plugin](https://keepass.info/plugins.html) to convert to XML
 ## Installation
 Install random
 ```bash
