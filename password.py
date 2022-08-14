@@ -39,48 +39,32 @@ def write_in_file():
         file.write("Username: ")
         file.write(str(email))
         file.write("\n")
-
         file.write("Password: ")
         file.write(str(password))
         file.write("\n")
-
         file.write(str("Tag, Tags:") + "\n")
-
         file.write(str("Notes: Gen by SimplePassGen") + "\n")
-
         file.write(str("Iconid: 0") + "\n")
-
         file.write(str("ExpiryTime:") + "\n")
-
         file.write(" " + "\n")  
-
         file.close()
     else:
 
         file.write(str("Group:General") + "\n")
-
         file.write("Title: ")
         file.write(str(site))
         file.write("\n")
-
         file.write("Username: ")
         file.write(str(email))
         file.write("\n")
-
         file.write("Password: ")
         file.write(str(password))
         file.write("\n")
-
         file.write(str("Tag, Tags:") + "\n")
-
         file.write(str("Notes: Gen by SimplePassGen") + "\n")
-
         file.write(str("Iconid: 0") + "\n")
-
         file.write(str("ExpiryTime:") + "\n")
-
         file.write(" " + "\n")  
-
         file.close()
 
 def print_m_p():
