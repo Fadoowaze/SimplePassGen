@@ -2,13 +2,11 @@ import os.path, random
 from art import *
 
 def pass_gen():
-    chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
     aprint("bearhug")
-    length = int(input('len pass'+ "\n"))
     global password
-    password = ""
-    for i in range(length):
-        password += random.choice(chars)
+    password = ''
+    for x in range(int(input('len pass'+ "\n"))): 
+        password = password + random.choice(list('1234567890abcdefghigklmnopqrstuvyxwzABCDEFGHIGKLMNOPQRSTUVYXWZ+-/*!&$#?=@<>'))
     return password
     
 def email_gen():    
@@ -36,13 +34,11 @@ ExpiryTime:
 """)
         f.close()
 
-
 def print_m_p():
     global email
     global password
     print(email)
     print(password) 
-
 
 def main():
     tprint("SimplePassGen")
