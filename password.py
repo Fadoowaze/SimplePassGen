@@ -1,9 +1,6 @@
 import os.path, random
 from art import *
 
-
-
-
 def pass_gen():
     chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
     aprint("bearhug")
@@ -26,9 +23,8 @@ def write_in_file():
     global site
     global email
     global password
-    if os.path.exists("password.txt") == True:
-        file = open("password.txt", "a")
-        file.write(f"""
+    with open("password.txt", "a") as f:
+        f.write(f"""
 Group:General
 Title: {site}
 Username: {email}
@@ -38,19 +34,8 @@ Notes: Gen by SimplePassGen
 Iconid: 0
 ExpiryTime: 
 """)
-        file.close()
-    else:
-        file.write(f"""
-Group:General
-Title: {site}
-Username: {email}
-Password: {password}
-Tag, Tags:
-Notes: Gen by SimplePassGen
-Iconid: 0
-ExpiryTime: 
-""")
-        file.close()
+        f.close()
+
 
 def print_m_p():
     global email
@@ -72,3 +57,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    
