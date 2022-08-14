@@ -32,7 +32,6 @@ Notes: Gen by SimplePassGen
 Iconid: 0
 ExpiryTime: 
 """)
-        f.close()
 
 def main():
     tprint("SimplePassGen")
