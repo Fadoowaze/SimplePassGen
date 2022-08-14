@@ -1,5 +1,4 @@
-import os.path
-import random
+import os.path, random
 from art import *
 
 
@@ -29,42 +28,28 @@ def write_in_file():
     global password
     if os.path.exists("password.txt") == True:
         file = open("password.txt", "a")
-
-        file.write(str("Group:General") + "\n")
-
-        file.write("Title: ")
-        file.write(str(site))
-        file.write("\n")
-
-        file.write("Username: ")
-        file.write(str(email))
-        file.write("\n")
-        file.write("Password: ")
-        file.write(str(password))
-        file.write("\n")
-        file.write(str("Tag, Tags:") + "\n")
-        file.write(str("Notes: Gen by SimplePassGen") + "\n")
-        file.write(str("Iconid: 0") + "\n")
-        file.write(str("ExpiryTime:") + "\n")
-        file.write(" " + "\n")  
+        file.write(f"""
+Group:General
+Title: {site}
+Username: {email}
+Password: {password}
+Tag, Tags:
+Notes: Gen by SimplePassGen
+Iconid: 0
+ExpiryTime: 
+""")
         file.close()
     else:
-
-        file.write(str("Group:General") + "\n")
-        file.write("Title: ")
-        file.write(str(site))
-        file.write("\n")
-        file.write("Username: ")
-        file.write(str(email))
-        file.write("\n")
-        file.write("Password: ")
-        file.write(str(password))
-        file.write("\n")
-        file.write(str("Tag, Tags:") + "\n")
-        file.write(str("Notes: Gen by SimplePassGen") + "\n")
-        file.write(str("Iconid: 0") + "\n")
-        file.write(str("ExpiryTime:") + "\n")
-        file.write(" " + "\n")  
+        file.write(f"""
+Group:General
+Title: {site}
+Username: {email}
+Password: {password}
+Tag, Tags:
+Notes: Gen by SimplePassGen
+Iconid: 0
+ExpiryTime: 
+""")
         file.close()
 
 def print_m_p():
