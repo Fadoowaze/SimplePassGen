@@ -34,12 +34,6 @@ ExpiryTime:
 """)
         f.close()
 
-def print_m_p():
-    global email
-    global password
-    print(email)
-    print(password) 
-
 def main():
     tprint("SimplePassGen")
     aprint("acid")
@@ -48,7 +42,6 @@ def main():
     site = input()
     email_gen()
     pass_gen()
-    print_m_p
     write_in_file()
 
 if __name__ == "__main__":
