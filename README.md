@@ -3,8 +3,6 @@ Password generator with support for KeePass [plugin](https://keepass.info/plugin
 ## Installation
 Install random
 ```bash
-pip install random
-
 pip install art
 ```
 ## Usage
