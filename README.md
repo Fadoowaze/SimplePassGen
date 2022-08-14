@@ -1,5 +1,5 @@
 # Simple password gen
-Just a password and mail generator with writing to a file
+Password generator with support for KeePass [plugin]:https://keepass.info/plugins.html#convertto2xxml to convert to XML
 ## Installation
 Install random
 ```bash
